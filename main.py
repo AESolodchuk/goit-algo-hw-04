@@ -21,8 +21,8 @@ if __name__ == "__main__":
 
     tl_insertion = timeit.timeit(lambda: insertion_sort(data_large), number=3)
     tl_merge = timeit.timeit(lambda: merge_sort(data_large), number=3)
-    tl_timsort = timeit.timeit(lambda: sorted(data_large), number=3)
-    tl_timsorted = timeit.timeit(lambda: (data_large.sort()), number=3)
+    tl_timsorted = timeit.timeit(lambda: sorted(data_large), number=3)
+    tl_timsort = timeit.timeit(lambda: (data_large.sort()), number=3)
 
     print(f"|{'Algorithm':^20} | {'Small':^20} | {'Medium':^20} | {'Large':^20}")
     print(f"|{'-'*20} | {'-'*20} | {'-'*20} | {'-'*20}")
@@ -31,8 +31,9 @@ if __name__ == "__main__":
     )
     print(f"|{'Merge':^20} | {ts_merge:^20.5f} | {tm_merge:^20.5f} | {tl_merge:^20.5f}")
     print(
-        f"|{'Timsort':^20} | {ts_timsort:^20.5f} | {tm_timsort:^20.5f} | {tl_timsort:^20.5f}"
-    )
-    print(
         f"|{'Timsorted':^20} | {ts_timsorted:^20.5f} | {tm_timsorted:^20.5f} | {tl_timsorted:^20.5f}"
     )
+    print(
+        f"|{'Timsort':^20} | {ts_timsort:^20.5f} | {tm_timsort:^20.5f} | {tl_timsort:^20.5f}"
+    )
+ 
